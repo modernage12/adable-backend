@@ -29,21 +29,23 @@ L'API sarà disponibile su `http://127.0.0.1:8000/api/`.
 
 ## Principali endpoint
 
-| Metodo | Endpoint | Funzione |
-|---|---|---|
-| GET, POST | `/api/clienti/` | Elenco e creazione clienti |
-| GET, PUT, PATCH, DELETE | `/api/clienti/<id>/` | Gestione singolo cliente |
-| GET, POST | `/api/campagne/` | Elenco e creazione campagne |
-| GET, PUT, PATCH, DELETE | `/api/campagne/<id>/` | Gestione singola campagna |
-| GET | `/api/clienti/<id>/campagne/` | Campagne di un cliente |
-| GET, POST | `/api/campagne/<id>/metriche/` | Metriche di una campagna |
-| GET, PUT, PATCH, DELETE | `/api/metrica/<id>/` | Gestione singola metrica |
-| GET | `/api/campagne/<id>/report/` | Report KPI della campagna |
-| POST | `/api/campagne/<id>/importa-csv/` | Importazione metriche CSV |
+| Metodo | Endpoint                               | Funzione |
+|---|----------------------------------------|---|
+| GET, POST | `/api/clienti/`                        | Elenco e creazione clienti |
+| GET, PUT, PATCH, DELETE | `/api/clienti/<id>/`                   | Gestione singolo cliente |
+| GET, POST | `/api/campagne/`                       | Elenco e creazione campagne |
+| GET, PUT, PATCH, DELETE | `/api/campagne/<id>/`                  | Gestione singola campagna |
+| GET | `/api/clienti/<id>/campagne/`          | Campagne di un cliente |
+| GET, POST | `/api/campagne/<id>/metriche/`         | Metriche di una campagna |
+| GET, PUT, PATCH, DELETE | `/api/metrica/<id>/`                   | Gestione singola metrica |
+| GET | `/api/campagne/<id>/report/`           | Report KPI della campagna |
+| POST | `/api/campagne/<id>/importa-metriche/` | Importazione metriche CSV |
 
 ## Stato
 
 Prima versione backend completata a scopo progettuale e didattico.
+
+**Limitazioni note:** l'importazione CSV non impedisce l'inserimento di metriche duplicate e non gestisce ancora tutti i casi di file malformati. Il progetto è destinato allo sviluppo e all'utilizzo locale, non a un ambiente di produzione.
 
 Il backend è destinato attualmente all'utilizzo locale. Non include ancora autenticazione, autorizzazione e tutte le protezioni necessarie per un deployment pubblico.
 
