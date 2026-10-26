@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Database locale
+db.sqlite3
+db.sqlite3-journal
+
+# Ambiente e configurazioni
+venv/
+.venv/
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+
+# Log
+*.log
