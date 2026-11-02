@@ -49,4 +49,14 @@ Prima versione backend completata a scopo progettuale e didattico.
 
 Il backend è destinato attualmente all'utilizzo locale. Non include ancora autenticazione, autorizzazione e tutte le protezioni necessarie per un deployment pubblico.
 
-Il prossimo sviluppo previsto è un frontend Flutter collegato alle API.
+## Frontend Flutter
+
+Adable include un frontend sviluppato con Flutter e Dart, collegato
+alle API REST di questo backend.
+
+Il frontend permette di visualizzare le campagne pubblicitarie,
+crearne di nuove, consultarne i dettagli ed eliminarle
+tramite una finestra di conferma.
+
+Repository frontend:
+https://github.com/modernage12/adable-frontend
